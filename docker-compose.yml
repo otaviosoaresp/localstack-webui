@@ -1,0 +1,20 @@
+services:
+  localstack:
+    image: localstack/localstack:latest
+    ports:
+      - "4566:4566"
+    environment:
+      - DEBUG=0
+    volumes:
+      - localstack-data:/var/lib/localstack
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  webui:
+    build: .
+    ports:
+      - "3000:80"
+    depends_on:
+      - localstack
+
+volumes:
+  localstack-data:
