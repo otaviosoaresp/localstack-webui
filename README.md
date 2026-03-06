@@ -4,6 +4,11 @@ A browser-based dashboard for managing LocalStack services. A stripped-down AWS 
 
 No backend. The browser talks directly to LocalStack through a dev proxy (Vite in development, nginx in production).
 
+<img width="2055" height="1274" alt="image" src="https://github.com/user-attachments/assets/f06729f2-c9ad-482d-9163-909b359d84c0" />
+<img width="2055" height="1274" alt="image" src="https://github.com/user-attachments/assets/f97d47f8-ea0d-4089-b9c7-46ccc4ce74ba" />
+<img width="2055" height="1274" alt="image" src="https://github.com/user-attachments/assets/72459686-46a0-47d9-85df-a561beb2d54e" />
+
+
 ## Services
 
 Each service has its own page with create, read, update, and delete operations:
