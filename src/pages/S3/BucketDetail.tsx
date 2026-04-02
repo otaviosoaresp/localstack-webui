@@ -9,7 +9,12 @@ import {
   message,
 } from "antd";
 import type { ColumnsType } from "antd/es/table";
-import type { UploadRequestOption } from "rc-upload/lib/interface";
+interface UploadRequestOption {
+  file: File | Blob | string;
+  onSuccess?: (body: unknown) => void;
+  onError?: (err: Error) => void;
+  onProgress?: (event: { percent: number }) => void;
+}
 import {
   ArrowLeftOutlined,
   ReloadOutlined,

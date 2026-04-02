@@ -85,7 +85,7 @@ function deriveColumnsFromItems(
           <Button type="text" danger icon={<DeleteOutlined />} />
         </Popconfirm>
       ),
-    } as (typeof columns)[number]);
+    } as unknown as (typeof columns)[number]);
   }
 
   return columns;

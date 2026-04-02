@@ -11,7 +11,7 @@ import {
   Space,
   message,
 } from "antd";
-import { ReloadOutlined, ArrowLeftOutlined } from "@ant-design/icons";
+import { ReloadOutlined } from "@ant-design/icons";
 import type { ColumnsType } from "antd/es/table";
 import type { OutputLogEvent } from "@aws-sdk/client-cloudwatch-logs";
 import { useConfig } from "../../config/ConfigContext";
